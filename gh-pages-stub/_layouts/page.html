@@ -2,6 +2,17 @@
 layout: default
 ---
 
+<div class="important">
+  <p>A newer version is available. For the latest information, see the
+    {% if page.canonical %}
+    <a href="{{ page.canonical }}">
+      {% else %}
+      <a href="https://www.kaaiot.com/docs">
+        {% endif %}
+        current release documentation.</a>
+  </p>
+</div>
+
 <div class="page">
   <h1 class="page-title" id="page-title">{{ page.title }}</h1>
   {{ content }}
