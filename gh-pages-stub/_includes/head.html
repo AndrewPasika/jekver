@@ -15,6 +15,12 @@
     {% endif %}
   </title>
 
+  {% if page.canonical %}
+    <link rel="canonical" href="{{ page.canonical }}">
+  {% else %}
+    <link rel="canonical" href="https://www.kaaiot.com/docs">
+  {% endif %}
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/bootstrap/bootstrap.min.css">
   <script src="{{ site.baseurl }}/public/js/jquery.min.js"></script>
